@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Om Paresh - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Besley&family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18, 18, 62);
+            position: sticky;
+        }
+
+        /* .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        } */
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+
+            color: rgb(136, 136, 247);
+            font-size: 1.01rem;
+
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 23px 0;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 80px 0;
+
+
+        }
+
+        .firstSection>div {
+            width: 30%;
+
+        }
+
+        .leftSection {
+
+            font-size: 2.8rem;
+
+        }
+
+        .rightSection {
+
+            width: 34 px;
+        }
+
+        .rightSection img {
+            width: 80%;
+
+            margin-top: -20px;
+        }
+
+        .purple {
+            color: rgb(170, 123, 214);
+        }
+
+        #element {
+            color: rgb(170, 123, 214);
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        main hr {
+            height: 1.2px;
+            background: #9c97f1;
+            margin-bottom: 60px;
+            border: 0;
+            margin: 40px 84px;
+        }
+
+        .text-grey {
+            color: rgb(170, 123, 214);
+        }
+
+        .secondSection .box {
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondSection .vertical {
+            height: 72px;
+            width: 1px;
+            background-color: white;
+            margin: 0 300px;
+
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 75px;
+            width: 150px;
+
+        }
+
+        .company {
+            margin-top: -60px;
+            margin-left: 5px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            color: gray;
+            width: 150px;
+            font-size: 11px;
+            margin-top: 200px;
+            margin-left: -300px;
+            float: right;
+
+        }
+
+        .img-top {
+            width: 30px;
+            position: relative;
+            top: -32px;
+            left: -15px;
+        }
+
+        footer {
+            background-color: #0e0e1a;
+
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul {
+            list-style: none;
+            cursor: pointer;
+        }
+
+        footer .footerright {
+            text-align: center;
+            color: gray;
+            padding: 12px 0;
+        }
+
+        .leftSection .btn {
+            margin-top: 80px;
+            padding: 12px;
+            background: #1e2167;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .leftSection .btns {
+            margin-top: 80px;
+            padding: 12px;
+            background: #1e2167;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .footersecond ul li a {
+            text-decoration: none;
+            color: white;
+            margin-left: 8px;
+        }
+
+        @media screen and (max-width:600px) {
+            .left {
+                font-size: 10px;
+                line-height: 5px;
+            }
+
+            nav ul li a {
+                font-size: 10px;
+
+            }
+
+            nav ul li {
+                margin: 10px;
+            }
+
+            .leftSection {
+                font-size: 10px;
+            }
+
+            .buttons .btn {
+                font-size: 10px;
+                width: 120px;
+                line-height: 2px;
+                margin-right: 7px;
+            }
+
+            .buttons {
+                display: flex;
+            }
+
+            .secondSection {
+                font-size: 10px;
+            }
+
+            .rightSection img {
+                width: 50%;
+            }
+
+            .secondSection .box {
+                background: white;
+                width: 80vw;
+                height: 2px;
+                margin: 16px 0;
+                display: flex;
+            }
+
+            .secondSection .vertical {
+                height: 72px;
+                width: 1px;
+                background-color: white;
+                margin: 0 150px;
+
+            }
+
+            .vertical-title {
+                position: relative;
+                top: 65px;
+                width: 120px;
+
+            }
+
+            .company {
+                margin-top: -8px;
+                margin-left: 5px;
+            }
+
+            .vertical-desc {
+                position: relative;
+                color: gray;
+                width: 132px;
+                font-size: 8px;
+                margin-top: 140px;
+                float: right;
+                padding-left: 150px;
+            }
+
+            .img-top {
+                width: 30px;
+                position: relative;
+                top: -32px;
+                left: -15px;
+            }
+
+            footer {
+                background-color: #0e0e1a;
+
+            }
+
+            .footer {
+                display: flex;
+                padding: 23px 20px;
+                justify-content: space-evenly;
+                font-size: 10px;
+            }
+
+            .footer ul {
+                list-style: none;
+                cursor: pointer;
+            }
+
+            footer .footerright {
+                text-align: center;
+                color: gray;
+                padding: 12px 0;
+                font-size: 10px;
+            }
+
+            .leftSection .btn {
+                margin-top: 20px;
+                padding: 12px;
+                background: #1e2167;
+                color: white;
+                border: 2px solid white;
+                border-radius: 6px;
+                font-size: 8px;
+                cursor: pointer;
+            }
+
+            .leftSection .btns {
+                margin-top: 20px;
+                padding: 12px;
+                background: #1e2167;
+                color: white;
+                border: 2px solid white;
+                border-radius: 6px;
+                font-size: 8px;
+                cursor: pointer;
+                height: 30px;
+                padding-top: 4px;
+            }
+
+            main hr {
+                height: 1.2px;
+                background: #9c97f1;
+                margin-bottom: 60px;
+                border: 0;
+                margin: 20px 40px;
+            }
+
+            main hr {
+                margin-top: -60px;
+
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+
+            <div class="left">Om Paresh's Portfolio</div>
+            <div class="right">
+                <ul>
+
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#s1">About</a></li>
+                    <li><a href="#s3">Experience</a></li>
+                    <!-- <li><a href="/">Projects</a></li> -->
+                    <li><a href="#s5">Contact Me</a></li>
+                    </a>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+    <main>
+        <section id="s1" class="firstSection">
+            <div class="leftSection">Hi, My name is <span class="purple">Om Paresh</span>
+                <div>and I am an Aspiring </div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <a download="Om Paresh.pdf" href="Om Paresh.pdf"><button class="btn">Download Resume</button></a>
+                    <a href="https://github.com/ompareshbehera"><button class="btns">Visit Github</button></a>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="quantum-developer.png">
+            </div>
+
+        </section>
+        <hr>
+        <section id="s3" class="secondSection">
+            <span class="text-grey">What I have done so far</span>
+            <h1>Work experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="img-top" src="developer.png">
+
+                    <div class="vertical-title">Business Analyst Jan 2022 to May 2023</div>
+                    <div class="company">Standard Chartered</div>
+                </div>
+
+                <div class="vertical-desc">Understand business requirements and translate into quality
+                    technology solutions. Proactively engage, manage, and build strong relationships
+                    with both business and technology stakeholders.</div>
+                <div class="vertical">
+                    <img class="img-top" src="developer.png">
+                    <div class="vertical-title">Business Analyst May 2023 to Current</div>
+                    <div class="company">IBM</div>
+                </div>
+                <div class="vertical-desc">Conduct in-depth analysis of client’s business process,
+                    systems, and objectives to identify improvement opportunities and develop effective IT solutions.
+
+                </div>
+            </div>
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div id="s5" class="footer">
+            <div class="footerfirst">
+                <h3>Om Paresh's Developer Portfolio</h3>
+            </div>
+            <div class="footersecond">
+                <ul>
+                    <li> <i class="fa-regular fa-envelope"></i><a
+                            href="https://mail.google.com/mail/u/1/?view=cm&fs=1&to=ompareshbehera45@gmail.com&tf=1">Gmail</a>
+                    </li>
+                    <li> <i class="fa-brands fa-linkedin"></i><a
+                            href="https://www.linkedin.com/in/ompareshbehera/">LinkedIn</a></li>
+                    <li> <i class="fa-brands fa-github"></i><a href="https://github.com/ompareshbehera">GitHub</a></li>
+                </ul>
+            </div>
+            <div class="footerthird"></div>
+            <div class="footerfourth"></div>
+
+        </div>
+        <div class="footerright">
+            copyright © ompareshportfolio.com | All rights reserved.
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Business Analyst'],
+            typeSpeed: 50
+        });
+        /*   window.onscroll = function () { myFunction() };
+           var nav = document.getElementById('nav');
+           var sticky = nav.offsetTop;
+           function myFunction() {
+               if (window.pageYOffset >= sticky) {
+                   nav.classList.remove("sticky");
+               }
+           }*/
+    </script>
+</body>
+
+</html>
